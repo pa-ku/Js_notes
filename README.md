@@ -9,10 +9,10 @@ array.splice( startIndex,n°elementos agregados, elemento agregado )
 
 ## Ordenar array
 
-| **Método** | **Acceso al índice** |  | **Break** |
+| **Método** | **Acceso al índice**  | **Break** |
 |------------|-----------------------|-----------|
-| `for`      | Sí                                    | Sí        | 
-| `while`    | Sí                                    | Sí        | 
+| `for`      | Sí    | Sí        | 
+| `while`    | Sí  | Sí        | 
 | `for of`   | No                                     | Sí        |
 | `forEach`  | Sí                                    | No        |
 | `map`      | No                                    | No        |
