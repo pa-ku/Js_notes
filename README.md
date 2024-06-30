@@ -13,8 +13,8 @@ array.splice( startIndex,n°elementos agregados, elemento agregado )
 |------------|-----------------------|-----------|
 | `for`      | Sí    | Sí        | 
 | `while`    | Sí  | Sí        | 
-| `for of`   | No                                     | Sí        |
 | `forEach`  | Sí                                    | No        |
+| `for of`   | No                                     | Sí        |
 | `map`      | No                                    | No        |
 
 
