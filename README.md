@@ -1,14 +1,21 @@
 ## Splice
+array.splice( startIndex,n°elementos agregados, elemento agregado )
+ 
+`const animales= ['🐢','🐸','🐷']`
+<br>
+`animales.splice (1,0,'🦊')`
+<br>
+`Output:  🐢,🦊,🐸,🐷`
 
 ## Ordenar array
 
 | **Método** | **Acceso al índice** | **Acceso al valor** | **Break** | **Índice** | **Nuevo array (Inmutabilidad)** |
 |------------|-----------------------|---------------------|-----------|------------|-----------------|
 | `for`      | Sí                    | Sí                  | Sí        | Sí         | No              |
-| `while`    | No                    | Sí                  | Sí        | No         | No              |
-| `map`      | No                    | No                  | No        | No         | Sí              |
-| `for of`   | No                    | Sí                  | No        | No         | No              |
-| `forEach`  | No                    | Sí                  | No        | No         | No              |
+| `while`    | Sí                    | Sí                  | Sí        | Sí         | No              |
+| `for of`   | No                    | Sí                  | Sí        | No         | No              |
+| `forEach`  | Sí                    | Sí                  | No        | No         | No              |
+| `map`      | No                    | Sí                  | No        | No         | Sí              |
 
 
 
