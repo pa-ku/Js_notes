@@ -9,13 +9,13 @@ array.splice( startIndex,n°elementos agregados, elemento agregado )
 
 ## Ordenar array
 
-| **Método** | **Acceso al índice** | **Acceso al valor** | **Break** | **Índice** | **Nuevo array (Inmutabilidad)** |
-|------------|-----------------------|---------------------|-----------|------------|-----------------|
-| `for`      | Sí                    | Sí                  | Sí        | Sí         | No              |
-| `while`    | Sí                    | Sí                  | Sí        | Sí         | No              |
-| `for of`   | No                    | Sí                  | Sí        | No         | No              |
-| `forEach`  | Sí                    | Sí                  | No        | No         | No              |
-| `map`      | No                    | Sí                  | No        | No         | Sí              |
+| **Método** | **Acceso al índice** |  | **Break** |
+|------------|-----------------------|-----------|
+| `for`      | Sí                                    | Sí        | 
+| `while`    | Sí                                    | Sí        | 
+| `for of`   | No                                     | Sí        |
+| `forEach`  | Sí                                    | No        |
+| `map`      | No                                    | No        |
 
 
 
