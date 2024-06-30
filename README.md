@@ -1,3 +1,17 @@
+## Splice
+
+## Ordenar array
+
+| **Método** | **Acceso al índice** | **Acceso al valor** | **Break** | **Índice** | **Nuevo array (Inmutabilidad)** |
+|------------|-----------------------|---------------------|-----------|------------|-----------------|
+| `for`      | Sí                    | Sí                  | Sí        | Sí         | No              |
+| `while`    | No                    | Sí                  | Sí        | No         | No              |
+| `map`      | No                    | No                  | No        | No         | Sí              |
+| `for of`   | No                    | Sí                  | No        | No         | No              |
+| `forEach`  | No                    | Sí                  | No        | No         | No              |
+
+
+
 | **Método**    | **Descripción**                                                                                 |
 |---------------|-------------------------------------------------------------------------------------------------|
 | `find`        | Regresa el elemento encontrado.                                                                 |
