@@ -37,7 +37,7 @@ Una pequeña recopilacion de metodos de javascript, con ejemplos y descripciones
 ```javascript
 const array = ['a', 'b', 'c'];
 for (const [index, element] of array.entries()) {
-  console.log(index, element);
+  console.log(index, element); //0 'a' 1 'b' 2 'c'
 }
 ````
 
@@ -46,8 +46,7 @@ for (const [index, element] of array.entries()) {
 Regresa el valor más alto 
 ```javascript
 const numbers = [1,2,3,6000,5,5000,7,8,3000] 
-Math.max(...numbers)
-output: 6000
+Math.max(...numbers) //6000
 ```
 
 ## Splice
@@ -57,11 +56,20 @@ array.splice( startIndex,n°elementos agregados, elemento agregado )
 
  ```javascript
 const animales= ['🐢','🐸','🐷']
-animales.splice (1,0,'🦊')
-Output:🐢,🦊,🐸,🐷
+animales.splice (1,0,'🦊') //🐢,🦊,🐸,🐷
 ```
 
-
+## LocalStorage
+````javascript
+//Crear
+localStorage.setItem("nombre", 'Pablo')
+//Usar
+localStorage.getItem("nombre") //Pablo
+//Eliminar
+localStorage.removeItem("nombre")
+//Eliminar todos
+localStorage.clear()
+````
 
 
 
