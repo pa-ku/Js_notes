@@ -1,3 +1,8 @@
+## MatMmax
+const numbers = [1,2,3,6000,5,5000,7,8,3000] <br> 
+Math.max(...numbers)  `6000` <br>
+Regresa el valor más alto
+
 ## Splice
 array.splice( startIndex,n°elementos agregados, elemento agregado )
  
