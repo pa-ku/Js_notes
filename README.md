@@ -102,3 +102,19 @@ console.groupCollapsed()
 ````
 
 
+# Algoritmos
+Los algoritmos son una serie de pasos que se realizan para resolver un problema. 
+
+## Busqueda Binaria
+Sirve para ncontrar un elemento en una lista ordenada. Funciona dividiendo repetidamente la lista a la mitad y comparando el elemento buscado con el elemento del medio.
+__Es muy eficiente, con una complejidad de tiempo de `O(log n)`, lo que la hace mucho más rápida que una búsqueda lineal para listas grandes.__
+
+#### 1. _Inicio_: Empezás con dos índices, uno al principio (inicio) y otro al final (fin) de la lista.
+#### 2. _Comparación_: Calculás el índice del medio de la lista y comparás el elemento del medio con el que estás buscando.
+#### 3. _Decisión_:
+  - Si el elemento del medio es igual al que buscás, ¡bingo! Lo encontraste.
+ - Si el elemento del medio es mayor que el que buscás, descartás la mitad superior de la lista (moviendo el índice del fin a una posición antes del medio).
+- Si el elemento del medio es menor, descartás la mitad inferior de la lista (moviendo el índice del inicio a una posición después del medio).
+#### 4. _Repetir_: Repetís el proceso con la mitad restante de la lista hasta que encontrés el elemento o la lista no tenga más elementos para dividir.
+
+
