@@ -103,19 +103,34 @@ console.groupCollapsed()
 
 
 # Algoritmos
-Los algoritmos son una serie de pasos que se realizan para resolver un problema. 
+Un conjunto de instrucciones paso a paso que se siguen para resolver un problema o completar una tarea.
+
+| Algoritmo          | Uso                                              |
+|--------------------|--------------------------------------------------|
+| Búsqueda Binaria   | Encontrar un elemento en una lista ordenada      |
+| Quicksort          | Ordenar listas de manera eficiente               |
+| Merge Sort         | Ordenar listas, especialmente útil en listas grandes |
+| Dijkstra           | Encontrar el camino más corto en un grafo        |
+| A* (A-star)        | Búsqueda del camino más corto, usado en IA de videojuegos |
+| Algoritmo de KMP   | Búsqueda de patrones en textos                    |
+| Algoritmo de Euclides | Calcular el máximo común divisor (MCD)         |
+| Árbol AVL          | Estructura de datos de árbol balanceado          |
+| Floyd-Warshall     | Encontrar caminos más cortos entre todos los pares de nodos en un grafo |
+| Algoritmo de PageRank | Clasificar páginas web según relevancia, usado por Google |
+| BFS (Breadth-First Search) | Búsqueda en amplitud en grafos           |
+| DFS (Depth-First Search) | Búsqueda en profundidad en grafos          |
 
 ## Busqueda Binaria
 Sirve para ncontrar un elemento en una lista ordenada. Funciona dividiendo repetidamente la lista a la mitad y comparando el elemento buscado con el elemento del medio.
 __Es muy eficiente, con una complejidad de tiempo de `O(log n)`, lo que la hace mucho más rápida que una búsqueda lineal para listas grandes.__
 
 #### 1. _Inicio_: Con un array ordenado empezás con dos índices, uno al principio (inicio) y otro al final (fin) de la lista.
-#### 2. _Comparación_: Calculás el índice del medio de la lista y comparás el elemento del medio con el que estás buscando.
-#### 3. _Decisión_:
+#### 2. _Calcular el indice medio_: Calculás el índice del medio de la lista y comparás el elemento del medio con el que estás buscando.
+#### 3. _Comprobar resultados_:
   - Si el elemento del medio es igual al que buscás, ¡bingo! Lo encontraste.
   - Si el elemento del medio es menor al buscado, se sumara +1 al indice y se probara nuevamente el elemento siguiente ej: 4,5,6,7
   - Si el elemento del medio es mayor al buscado, se restara -1 al indice y se probara nuevamente el elemento anterior ej: 3,2,1,0
-#### 4. _Repetir_: Repetís el proceso con la mitad restante de la lista hasta que encontrés el elemento o la lista no tenga más elementos para dividir.
+#### 4. _Repetir_: Repetís el proceso con la mitad restante de la lista hasta que encontrés el elemento o la lista no tenga más elementos para dividir regresando -1.
 
 `````javascript
 const numbers = [100, 300, 50, 20,600, 200, 250, 130 ,70,20, 5]
@@ -132,7 +147,7 @@ while(inicio <= final){
   if(array[medio] === objetivo){
     return `index: ${medio} value: ${objetivo}`  //index: 8 value: 200
   }
-  else if( array[medio] < objetivo){ //si no se encuentra  en el medio se suma 1 al indice para validar la parte derecha del array
+  else if( array[medio] < objetivo){
     inicio = medio + 1
   }
   else {
