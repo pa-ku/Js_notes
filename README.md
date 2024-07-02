@@ -23,16 +23,14 @@ Una pequeña recopilacion de metodos de javascript, con ejemplos y descripciones
 | `copyWithin`  | Copia una parte del array a otra ubicación en el mismo array y devuelve el array, sin modificar su longitud. |
 
 
-| Método    | Acceso al índice | Break | Mutabilidad | Paralelismo | Retorno        | Compatibilidad | Propósito Principal                       |
-|-----------|------------------|-------|-------------|-------------|----------------|----------------|-------------------------------------------|
-| `for`     | Sí               | Sí    | No          | No          | `undefined`    | ES1            | Iterar sobre elementos                    |
-| `while`   | Sí               | Sí    | No          | No          | `undefined`    | ES1            | Iterar hasta que una condición sea falsa  |
-| `forEach` | Sí               | No    | No          | No          | `undefined`    | ES5            | Ejecutar una función para cada elemento   |
-| `for...of`| No (1)           | Sí    | No          | No          | `undefined`    | ES6            | Iterar sobre elementos de objetos iterables |
-| `map`     | No               | No    | No          | No          | Nuevo array    | ES5            | Crear un nuevo array transformado         |
-| `filter`  | No               | No    | No          | No          | Nuevo array    | ES5            | Crear un nuevo array con elementos que pasan una prueba |
-| `reduce`  | No               | No    | No          | No          | Valor único    | ES5            | Reducir array a un solo valor             |
-| `find`    | No               | No    | No          | No          | Elemento       | ES6            | Encontrar el primer elemento que cumple una condición |
+| Método    | Acceso al índice | Break | Retorno        | Propósito Principal                       |
+|-----------|------------------|-------|-------------------|-------------------------------------------|
+| `for`     | Sí               | Sí    | `undefined`    | Iterar sobre elementos                    |
+| `while`   | Sí               | Sí    | `undefined`    | Iterar hasta que una condición sea falsa  |
+| `forEach` | Sí               | No    | `undefined`    | Ejecutar una función para cada elemento   |
+| `for...of`| No (1)           | Sí    | `undefined`    | Iterar sobre elementos de objetos iterables |
+| `map`     | No               | No    | Nuevo array    | Crear un nuevo array transformado         |
+
 
 **Nota:** 
 1. Con `for...of`, puedes acceder al índice usando el método `entries()`, como se muestra a continuación:
