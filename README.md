@@ -71,6 +71,29 @@ localStorage.removeItem("nombre")
 localStorage.clear()
 ````
 
+## Console
+````javascript
+//Contar las veces que se ejecuta
+for (let i = 0; i < 3; i++) {
+  console.count("count") //count: 1 count: 2 count: 3
+}
 
+//Error
+console.error()
+
+//Mensaje de alerta
+console.warn()
+
+//Calcular tiempo de una tarea
+console.time()
+console.timeEnd() //default: 0ms
+
+//Crear tabla
+console.table([{firstname:"John", lastname:"Doe" , age:20}])
+
+| (index) | firstname | lastname | age |
+----------------------------------------
+|    0    |  'John'   |  'Doe'   | 20  |
+````
 
 
