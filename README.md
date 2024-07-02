@@ -13,6 +13,7 @@ Una pequeña recopilacion de metodos de javascript, con ejemplos y descripciones
 | `filter`      | Crea un nuevo array con todos los elementos que pasen la prueba implementada por la función dada.|
 | `reduce`      | Aplica una función a un acumulador y a cada elemento del array (de izquierda a derecha) para reducirlo a un solo valor. |
 | `sort`        | Ordena los elementos de un array en su lugar y devuelve el array. El orden es según la posición del valor Unicode de cada carácter. | 
+| `toSorted`    | No modifica el array original como sort | 
 | `reverse`     | Invierte el orden de los elementos de un array en su lugar y devuelve el array.                 |
 | `concat`      | Se utiliza para unir dos o más arrays. Este método no cambia los arrays existentes, sino que devuelve un nuevo array. |
 | `slice`       | Devuelve una copia de una parte del array dentro de un nuevo array desde el inicio hasta el fin (sin incluirlo). |
@@ -23,7 +24,7 @@ Una pequeña recopilacion de metodos de javascript, con ejemplos y descripciones
 | `copyWithin`  | Copia una parte del array a otra ubicación en el mismo array y devuelve el array, sin modificar su longitud. |
 
 
-| Método    | Acceso al índice | Break | Retorno        | Propósito Principal                       |
+| Método    | Acceso al índice | Break | Retorno        | Descripción                      |
 |-----------|------------------|-------|-------------------|-------------------------------------------|
 | `for`     | Sí               | Sí    | `undefined`    | Iterar sobre elementos                    |
 | `while`   | Sí               | Sí    | `undefined`    | Iterar hasta que una condición sea falsa  |
