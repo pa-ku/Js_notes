@@ -120,6 +120,18 @@ Un conjunto de instrucciones paso a paso que se siguen para resolver un problema
 | BFS (Breadth-First Search) | Búsqueda en amplitud en grafos           |
 | DFS (Depth-First Search) | Búsqueda en profundidad en grafos          |
 
+### Recursividad 
+La recursividad es una técnica donde una función se llama a sí misma para resolver un problema. Se utiliza mucho para problemas que pueden dividirse en subproblemas más pequeños del mismo tipo. Es como si tuvieras que bajar una escalera y para cada escalón decides volver a llamar a tu cerebro para que te diga cómo bajar el siguiente.
+
+## Paradigmas de diseño
+
+### Divide y Venceras
+  1. Tomar el problema original
+  2. Dividirlo en partes mas pequeñas hasta ser tan pequeñas que sea más facil solucionarlos
+  4. Tomar las pequeñas soluciones y unirlas hasta generar el resultado del problema
+
+
+
 ## Busqueda Binaria
 Sirve para ncontrar un elemento en una lista ordenada. Funciona dividiendo repetidamente la lista a la mitad y comparando el elemento buscado con el elemento del medio.
 __Es muy eficiente, con una complejidad de tiempo de `O(log n)`, lo que la hace mucho más rápida que una búsqueda lineal para listas grandes.__
