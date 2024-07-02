@@ -109,12 +109,38 @@ Los algoritmos son una serie de pasos que se realizan para resolver un problema.
 Sirve para ncontrar un elemento en una lista ordenada. Funciona dividiendo repetidamente la lista a la mitad y comparando el elemento buscado con el elemento del medio.
 __Es muy eficiente, con una complejidad de tiempo de `O(log n)`, lo que la hace mucho más rápida que una búsqueda lineal para listas grandes.__
 
-#### 1. _Inicio_: Empezás con dos índices, uno al principio (inicio) y otro al final (fin) de la lista.
+#### 1. _Inicio_: Con un array ordenado empezás con dos índices, uno al principio (inicio) y otro al final (fin) de la lista.
 #### 2. _Comparación_: Calculás el índice del medio de la lista y comparás el elemento del medio con el que estás buscando.
 #### 3. _Decisión_:
   - Si el elemento del medio es igual al que buscás, ¡bingo! Lo encontraste.
- - Si el elemento del medio es mayor que el que buscás, descartás la mitad superior de la lista (moviendo el índice del fin a una posición antes del medio).
-- Si el elemento del medio es menor, descartás la mitad inferior de la lista (moviendo el índice del inicio a una posición después del medio).
+  - Si el elemento del medio es menor al buscado, se sumara +1 al indice y se probara nuevamente el elemento siguiente ej: 4,5,6,7
+  - Si el elemento del medio es mayor al buscado, se restara -1 al indice y se probara nuevamente el elemento anterior ej: 3,2,1,0
 #### 4. _Repetir_: Repetís el proceso con la mitad restante de la lista hasta que encontrés el elemento o la lista no tenga más elementos para dividir.
 
+`````javascript
+const numbers = [100, 300, 50, 20,600, 200, 250, 130 ,70,20, 5]
+numbers.sort( (a,b ) => a - b ) //Ordenar el array
 
+function busquedaBinaria (array,objetivo) {
+let inicio = 0
+let final = array.length -1
+
+while(inicio <= final){
+  const medio = Math.floor( (inicio + final) / 2 ) //se obtiene el indice medio del array
+//math floor para redondear, ya que si el indice es 11 la mitad no daria un numero decimal
+  
+  if(array[medio] === objetivo){
+    return `index: ${medio} value: ${objetivo}`  //index: 8 value: 200
+  }
+  else if( array[medio] < objetivo){ //si no se encuentra  en el medio se suma 1 al indice para validar la parte derecha del array
+    inicio = medio + 1
+  }
+  else {
+    final = medio -1
+  }
+}
+  return -1 //si no se encuentra retorna -1
+}
+  
+  busquedaBinaria(numbers, 200)
+``````
