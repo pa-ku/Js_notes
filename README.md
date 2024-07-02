@@ -89,11 +89,11 @@ console.time()
 console.timeEnd() //default: 0ms
 
 //Crear tabla
-console.table([{firstname:"Darwin", lastname:"Darwin" , age:20}])
+console.table([{firstname:"Pablo", lastname:"Kuhn" , age:20}])
 
 | (index) | firstname | lastname | age |
 ----------------------------------------
-|    0    | 'Darwin'  | 'Darwin' | 20  |
+|    0    | 'Pablo'  | 'Kuhn' | 29  |
 ````
 
 
