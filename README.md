@@ -1,9 +1,16 @@
-## MatMmax
+# JSNotes
+Una pequeña recopilacion de metodos de javascript, con ejemplos y descripciones
+
+## MathMax
+Regresa el valor más alto 
+
 const numbers = [1,2,3,6000,5,5000,7,8,3000] <br> 
 Math.max(...numbers)  `6000` <br>
-Regresa el valor más alto
+
 
 ## Splice
+Elimina o agrega elementos a un array en el indice indicado
+
 array.splice( startIndex,n°elementos agregados, elemento agregado )
  
 `const animales= ['🐢','🐸','🐷']`
