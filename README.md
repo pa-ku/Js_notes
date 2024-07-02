@@ -94,6 +94,10 @@ console.table([{firstname:"Pablo", lastname:"Kuhn" , age:20}])
 | (index) | firstname | lastname | age |
 ----------------------------------------
 |    0    | 'Pablo'  | 'Kuhn' | 29  |
+
+//Mensajes de consola colapsables
+console.groupCollapsed()
+//El resto de mensajes de consola que estaran ocultos, tablas listas etc
 ````
 
 
